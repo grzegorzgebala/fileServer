@@ -1,0 +1,14 @@
+{
+  "name": "fileserver",
+  "version": "1.0.0",
+  "description": "File server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Grzegorz",
+  "license": "ISC",
+  "dependencies": {
+    "gitignore": "^0.6.0"
+  }
+}
