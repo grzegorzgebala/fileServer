@@ -16,7 +16,7 @@ server.on('request', function (request, response) {
             }
         });
     } else {
-            response.setHeader("Content-Type", "png; charset=utf-8");
+            response.setHeader("Content-Type", "image/png");
             fs.readFile('404.png', function read(err, files) {
             if (err) {
                 throw err;
