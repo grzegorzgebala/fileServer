@@ -16,9 +16,15 @@ server.on('request', function (request, response) {
             }
         });
     } else {
-            response.statusCode = 404;
-            response.write('<h1>404: Zła ścieżka!</h1>');
-            response.end();
+            response.setHeader("Content-Type", "png; charset=utf-8");
+            fs.readFile('404.png', function read(err, files) {
+            if (err) {
+                throw err;
+            } else {
+                response.write(files);
+                response.end();
+            }
+        });
     };
 });
 
